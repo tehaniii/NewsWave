@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsWave</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .banner {
+    background-image: url('images/banner.jpg'); 
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+
+    
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.center-column {
+    padding: 20px;
+    text-align: center;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.featured-article h2 {
+    color: #333;
+}
+
+.featured-article .meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.featured-article p {
+    line-height: 1.6;
+}
+
+.featured-article a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.featured-article a:hover {
+    text-decoration: underline;
+}
+
+.trending-card {
+    margin-bottom: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trending-info {
+    padding: 15px;
+}
+
+.trending-info .meta {
+    color: #666;
+    font-size: 14px;
+}
+
+.trending-info h3 {
+    margin-top: 10px;
+}
+
+.trending-info a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.trending-info a:hover {
+    text-decoration: underline;
+}
+button{
+background-color: #007bff;
+color: #fff;
+padding: 10px;
+border-radius: 20px;
+margin: 40px;
+border: none;
+}
+button :hover{
+    background-color: #8dc0f7;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="NewsWave Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="categories.php">Explore News</a>
+                      
+                    </li>
+                    <li><a href="register_home.php">Register</a></li>
+                    <li><a href="login.php">Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+           <i> <h1>Welcome to NewsWave</h1>
+            <p>Your ultimate source for news and updates</p>
+       </i> </div>
+    </section>
+
+ 
+    <!--Cards-->
+    <main><center><h1>Trending Topics for 2024</h1></center>
+        <div class="main-content">
+
+            <div class="left-column">
+                <div class="featured-article">
+                    <h2 style="font-size: 55px;">Exploring Cultural Identity Through AI Art</h2>
+                    <p class="meta">Arts | Emily Rodriguez | 5 Minutes Read</p>
+                    <p>Asep Suwono a rising star in the contemporary art scene known for their thought-provoking explorations of cultural identity and belonging. Through candid conversation and insightful commentary on Asep's portfolio, readers gain a deeper understanding of the intersection between art, culture, and activism.</p>
+                    <a href="categories.php" style="color: #000;">READ MORE</a>
+                </div>
+            </div>
+            <div class="center-column"> 
+                <div class="featured-image">
+                    <img src="images/ai.webp" width="670" height="700" alt="Featured Image">
+                </div>
+            </div>
+
+
+        
+            <div class="right-column">
+                <div class="trending-card">  <br> 
+
+                    <img src="images/sustainable1.jpg" width="300" height="200" alt="Trending Image 1">
+                    <div class="trending-info">
+                        <p class="meta">Real Estate | Emily Rodriguez</p>
+                        <h3>Sustainable Development Trends in City Planning</h3>
+                        <a href="categories.php" style="color: #000;">READ MORE</a>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src="images/home-tech.jpg"  width="300" height="200" alt="Trending Image 2">
+                    <div class="trending-info">
+                        <p class="meta">Technology | Paul Rodrigo</p>
+                        <h3>Revolutionizing Connectivity & Communication</h3>
+                        <a href="categories.php" style="color: #000;">READ MORE</a>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src="images/sustainable.jpg" width="300" height="200" alt="Trending Image 3">
+                    <div class="trending-info">
+                        <p class="meta">Natural Science | James Gordon</p>
+                        <h3>Exploring Nature's Hidden Kingdom</h3>
+                        <a href="categories.php" style="color: #000;">READ MORE</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NewsWave. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
